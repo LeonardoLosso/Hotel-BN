@@ -16,13 +16,15 @@
 }
 
 *{
-    color: aliceblue;
     margin: 0px;
     padding: 0px;
     font-family: var(--fonte-padrao);
 }
 html{
     scroll-behavior: smooth;
+}
+:target{
+    scroll-margin-top: 150px;
 }
 
 body{
@@ -33,6 +35,7 @@ body{
 }
 header{
     height: 100px;
+    color: aliceblue;
 }
 .cabeca{
     width: 146px;
@@ -71,6 +74,7 @@ nav a{
     font-weight: bold;
     transition-duration: .5s;
     border-radius: 10px;
+    color: aliceblue;
 }
 nav a:hover{
     background-color: var(--cor2);
@@ -93,6 +97,7 @@ main{
     margin: auto;
     height: 599px;
 }
+
 .slider li{
     list-style: none;
     position: absolute;
@@ -134,9 +139,25 @@ main{
     visibility: visible;
     z-index: 10;
 }
+main > article{
+    margin-top: 40px ;
+    padding: 0px 30px;
+    text-align: justify;
+}
+article p{
+    text-indent: 40px;
+}
+main > article h1{
+    background-image: linear-gradient(to right, #084e8cd3, transparent);
+    padding: 3px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--cor0);
+}
 footer{
     padding: 20px;
     background-color: var(--cor0);
+    color: aliceblue;
 }
 #mapa{
     display: flex;
