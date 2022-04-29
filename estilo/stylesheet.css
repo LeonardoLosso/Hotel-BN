@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'hotel';
+    src: url('/fontes/AbhayaLibre-ExtraBold.ttf') format('truetype');
+}
+:root{
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-hotel: 'hotel', serif;
+
+    --cor0: #010326;
+    --cor1: #020659;
+    --cor2: #084F8C;
+    --cor3: #010440;
+    --cor4: #e5e2ff;
+}
+
+*{
+    color: aliceblue;
+    margin: 0px;
+    font-family: var(--fonte-padrao);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image:linear-gradient(var(--cor0), var(--cor2));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+header{
+    height: 100px;
+}
+.cabeca{
+    width: 138px;
+    margin-left: 200px;
+    margin-top: 30px;
+}
+header  h1, h2{
+    width: fit-content;
+    font-family: var(--fonte-hotel);
+
+    text-shadow: 1px 1px 2px black;
+}
+header  h1{
+    font-size: 3.5em;
+    margin: auto;
+}
+
+nav{
+
+    height: 55px;
+    width: 100%;
+    background-image:linear-gradient(var(--cor0), var(--cor2));
+    position: sticky;
+    top: 0px;
+    padding: 10px 0px;
+
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    margin: 0px 2px;
+    text-decoration: none;
+    padding: 20px 20px;
+    font-weight: bold;
+    transition-duration: .5s;
+    border-radius: 10px;
+}
+nav a:hover{
+    background-color: var(--cor2);
+    box-shadow: 2px 2px 3px #000000a0;
+}
+#reserva{
+    background-color: #084F8C;
+}
+main{
+    background-color: white;
+    max-width: 1000px;
+    height: 100vh;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 2px 2px 3px #000000a0;
+    margin-bottom: 30px;
+}
+footer{
+    padding: 20px;
+    background-color: var(--cor0);
+}
+#mapa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+footer  address{
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    
+}
